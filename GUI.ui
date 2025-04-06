@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1123</width>
+    <height>816</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="button_loadimg">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>620</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_loadimg">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>40</y>
+      <width>521</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_grayscale">
+    <property name="geometry">
+     <rect>
+      <x>578</x>
+      <y>620</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grayscale Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_outimg">
+    <property name="geometry">
+     <rect>
+      <x>579</x>
+      <y>40</y>
+      <width>521</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1123</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConvolution_Filteration">
+    <property name="title">
+     <string>Convolution and Filteration</string>
+    </property>
+    <addaction name="actionConvImg"/>
+    <addaction name="actionGaussianF"/>
+   </widget>
+   <addaction name="menuConvolution_Filteration"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBrigthness">
+   <property name="text">
+    <string>Brigthness</string>
+   </property>
+  </action>
+  <action name="actionContrast">
+   <property name="text">
+    <string>Contrast</string>
+   </property>
+  </action>
+  <action name="actionContrast_Stretching">
+   <property name="text">
+    <string>Contrast_Stretching</string>
+   </property>
+  </action>
+  <action name="actionNegative">
+   <property name="text">
+    <string>Negative</string>
+   </property>
+  </action>
+  <action name="actionNegative_grayScale">
+   <property name="text">
+    <string>Negative_grayScale</string>
+   </property>
+  </action>
+  <action name="actionBinarization">
+   <property name="text">
+    <string>Binarization</string>
+   </property>
+  </action>
+  <action name="actiongrayScale_H">
+   <property name="text">
+    <string>grayScale_H</string>
+   </property>
+  </action>
+  <action name="actionRGB_H">
+   <property name="text">
+    <string>RGB_H</string>
+   </property>
+  </action>
+  <action name="actionEqualizer">
+   <property name="text">
+    <string>Equalizer</string>
+   </property>
+  </action>
+  <action name="actionTranslation">
+   <property name="text">
+    <string>Translation</string>
+   </property>
+  </action>
+  <action name="actionCropping">
+   <property name="text">
+    <string>Cropping</string>
+   </property>
+  </action>
+  <action name="action45_Degress">
+   <property name="text">
+    <string>45 Degress</string>
+   </property>
+  </action>
+  <action name="action_45_Degress">
+   <property name="text">
+    <string>90 Degress</string>
+   </property>
+  </action>
+  <action name="action180_Degress">
+   <property name="text">
+    <string>180 Degress</string>
+   </property>
+  </action>
+  <action name="actionmin45_Degress">
+   <property name="text">
+    <string>min45 Degress</string>
+   </property>
+  </action>
+  <action name="actionmin90_Degress">
+   <property name="text">
+    <string>min90 Degress</string>
+   </property>
+  </action>
+  <action name="action2x">
+   <property name="text">
+    <string>2x</string>
+   </property>
+  </action>
+  <action name="action3x">
+   <property name="text">
+    <string>3x</string>
+   </property>
+  </action>
+  <action name="action4x">
+   <property name="text">
+    <string>4x</string>
+   </property>
+  </action>
+  <action name="action1_2">
+   <property name="text">
+    <string>1/2</string>
+   </property>
+  </action>
+  <action name="action1_4">
+   <property name="text">
+    <string>1/4</string>
+   </property>
+  </action>
+  <action name="action5_4">
+   <property name="text">
+    <string>5/4</string>
+   </property>
+  </action>
+  <action name="actionAdder">
+   <property name="text">
+    <string>Adder</string>
+   </property>
+  </action>
+  <action name="actionSubtract">
+   <property name="text">
+    <string>Subtract</string>
+   </property>
+  </action>
+  <action name="actionMultiplie">
+   <property name="text">
+    <string>Multiplie</string>
+   </property>
+  </action>
+  <action name="actionDivide">
+   <property name="text">
+    <string>Divide</string>
+   </property>
+  </action>
+  <action name="actionArithmatic">
+   <property name="text">
+    <string>Arithmatic</string>
+   </property>
+  </action>
+  <action name="actionAND">
+   <property name="text">
+    <string>AND</string>
+   </property>
+  </action>
+  <action name="actionOR">
+   <property name="text">
+    <string>OR</string>
+   </property>
+  </action>
+  <action name="actionXOR">
+   <property name="text">
+    <string>XOR</string>
+   </property>
+  </action>
+  <action name="actionBoolean">
+   <property name="text">
+    <string>Boolean</string>
+   </property>
+  </action>
+  <action name="actionRotation">
+   <property name="text">
+    <string>Rotation</string>
+   </property>
+  </action>
+  <action name="actionResizing">
+   <property name="text">
+    <string>Resizing</string>
+   </property>
+  </action>
+  <action name="actionConvImg">
+   <property name="text">
+    <string>Convolution Image</string>
+   </property>
+  </action>
+  <action name="actionMeanF">
+   <property name="text">
+    <string>Mean Filter</string>
+   </property>
+  </action>
+  <action name="actionGaussianF">
+   <property name="text">
+    <string>Gaussian Filter</string>
+   </property>
+  </action>
+  <action name="actionMedianF">
+   <property name="text">
+    <string>Median Filter</string>
+   </property>
+  </action>
+  <action name="actionSharpImg">
+   <property name="text">
+    <string>High-Pass Filter (Sharpenning)</string>
+   </property>
+  </action>
+  <action name="actionMaxF">
+   <property name="text">
+    <string>Max Filter</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
