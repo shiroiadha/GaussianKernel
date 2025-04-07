@@ -84,10 +84,21 @@
    </property>
    <widget class="QMenu" name="menuConvolution_Filteration">
     <property name="title">
-     <string>Convolution and Filteration</string>
+     <string>Filteration and Save File</string>
     </property>
-    <addaction name="actionConvImg"/>
+    <widget class="QMenu" name="menuUpScale">
+     <property name="title">
+      <string>UpScale</string>
+     </property>
+     <addaction name="action1_5"/>
+     <addaction name="action2"/>
+     <addaction name="action4"/>
+    </widget>
     <addaction name="actionGaussianF"/>
+    <addaction name="actionSharpener"/>
+    <addaction name="menuUpScale"/>
+    <addaction name="actionUnsharpM"/>
+    <addaction name="actionSave"/>
    </widget>
    <addaction name="menuConvolution_Filteration"/>
   </widget>
@@ -285,6 +296,36 @@
   <action name="actionMaxF">
    <property name="text">
     <string>Max Filter</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save File</string>
+   </property>
+  </action>
+  <action name="actionSharpener">
+   <property name="text">
+    <string>Sharpenning (High-Pass)</string>
+   </property>
+  </action>
+  <action name="action1_5">
+   <property name="text">
+    <string>1.5</string>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="action4">
+   <property name="text">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="actionUnsharpM">
+   <property name="text">
+    <string>Unsharp Masking (CV2 Libary)</string>
    </property>
   </action>
  </widget>
